@@ -1,15 +1,26 @@
 #include<stdio.h>
+
+void displayArray(int *p){
+    for(int i=0;i<5;i++){
+        printf(" %d ",*(p+i));
+    }
+    printf("\n");
+      for(int i=0;i<5;i++){
+        printf(" %d ",p[i]);
+    }
+       printf("\n");
+
+    for(int i=0;i<5;i++){
+        printf(" %d ",*p);
+        p=p+1;  //p++
+    }
+}
+
 int main()
 {
-    int home[5];
-    int i;
-    for(i=0;i<5;i++)
-    {
-        printf("ENTER");
-        scanf("%d",&home[i]);
-    }
-     for(i=0;i<5;i++)
-     {
-        printf("%d\n",home[i]);
+    int arr[]={11,22,33,44,55};
+
+displayArray(arr);
+
 }
-}
+
