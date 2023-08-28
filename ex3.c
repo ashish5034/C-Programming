@@ -1,9 +1,14 @@
+//Ex no 3:
 #include<stdio.h>
 
 struct box{
 int ht; float wd;double len;
 };
 
+void displayBox(struct box b)
+{
+printf("HT:  %d  WD:  %f  LEN:  %lf \n",b.ht,b.wd,b.len);
+}
 
 int main()
 {
@@ -15,7 +20,9 @@ int main()
     printf("Enter Len \n");
     scanf("%lf",&b2.len);
 
-    printf("HT:  %d  WD:  %f  LEN:  %lf",b2.ht,b2.wd,b2.len);
+    printf("HT:  %d  WD:  %f  LEN:  %lf \n",b2.ht,b2.wd,b2.len);
 
-
+   printf("-------------------\n");
+    displayBox(b2); // What is the type of b2
 }
+
